@@ -7,8 +7,7 @@ export default (editor, opt = {}) => {
 
   dc.addType(burgerType, {
     model: defaultModel.extend({
-      defaults: {
-        ...defaultModel.prototype.defaults,
+      defaults: Object.assign({}, dModel.prototype.defaults,{
                         traits: [
 
                             {
