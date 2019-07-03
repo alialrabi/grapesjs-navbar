@@ -9,6 +9,19 @@ export default (editor, opt = {}) => {
     model: defaultModel.extend({
       defaults: {
         ...defaultModel.prototype.defaults,
+                        traits: [
+
+                            {
+                                placeholder: 'Type your text here',
+                                type: 'select',
+                                label: 'nav',
+                                name: 'nav',
+                                options: [{ value: '1', name: 'one' }, { value: '2', name: 'two' },{ value: '3', name: 'three' },
+                                    { value: '4', name: 'four' },{ value: '5', name: 'five' },{ value: '6', name: 'sex' }],
+                                changeProp: 1,
+                            },
+                        ],
+                 
         'custom-name': c.labelBurger,
         draggable: false,
         droppable: false,
